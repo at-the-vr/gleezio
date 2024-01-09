@@ -2,6 +2,7 @@ import { Section } from "./components/site/Section"
 import { Container } from "./components/site/Container"
 import { Layout } from "./components/site/Layout"
 import { Button } from "./components/library/Button"
+import { ContentCard } from "./components/library/Card"
 
 export default function App() {
 	return (
@@ -231,16 +232,20 @@ export default function App() {
 				</Section>
 			</Container>
 			<Container
-				title="Component Name using container component"
-				description="Component Description using container component"
+				title="Card"
+				description="A card is a flexible and extensible content container"
 			>
 				<Section
-					title="Section Heading with Components"
-					description="Description using components"
+					title="Simple"
+					description="Simple cards display content and can provide a distinct link that can be selected"
 				>
-					<div className="bg-blue-500/50 p-3">Component 1</div>
-					<div className="bg-blue-500/50 p-3">Component 2</div>
-					<div className="bg-blue-500/50 p-3">Component 3</div>
+					{/* Simple Card */}
+					<ContentCard
+						title="Card Title"
+						subtitle="Card Subtitle"
+						plainText="Some quick example text to build on the card title and make up the bulk of the card's content"
+						link={{ url: "/", text: "Card link" }}
+					></ContentCard>
 				</Section>
 
 				<Section
