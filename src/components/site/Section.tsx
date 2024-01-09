@@ -17,7 +17,7 @@ export const Section = ({
 
 			{/* Section Preview */}
 			<div className="mt-3">
-				<div className="flex flex-col rounded-xl p-6 shadow-sm">
+				<div className="flex flex-col rounded-xl border p-6 shadow-sm">
 					{/* Previewed Stuff aka the child components*/}
 					<div className="flex flex-wrap gap-2">{children}</div>
 				</div>
