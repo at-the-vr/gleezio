@@ -2,7 +2,8 @@ import { Section } from "./components/site/Section"
 import { Container } from "./components/site/Container"
 import { Layout } from "./components/site/Layout"
 import { Button } from "./components/library/Button"
-import { ContentCard } from "./components/library/Card"
+import { BlockLinkCard, ContentCard } from "./components/library/Card"
+import { SiVite, SiNextdotjs } from "react-icons/si"
 
 export default function App() {
 	return (
@@ -272,12 +273,18 @@ export default function App() {
 				</Section>
 
 				<Section
-					title="Section Heading with Components"
-					description="Description using components"
+					title="Block link"
+					description="A simple card enhanced into a selectable block link"
 				>
-					<div className="bg-blue-500/50 p-3">Component 1</div>
-					<div className="bg-blue-500/50 p-3">Component 2</div>
-					<div className="bg-blue-500/50 p-3">Component 3</div>
+					{/* Vite Card */}
+					<BlockLinkCard url="https://vitejs.dev/" text="Vite">
+						<SiVite className="h-10 w-10" />
+					</BlockLinkCard>
+
+					{/* NextJs Card */}
+					<BlockLinkCard url="https://nextjs.org/" text="NextJs">
+						<SiNextdotjs className="h-10 w-10" />
+					</BlockLinkCard>
 				</Section>
 			</Container>
 		</Layout>
