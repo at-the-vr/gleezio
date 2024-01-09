@@ -4,10 +4,12 @@ import { Layout } from "./components/site/Layout"
 import { Button } from "./components/library/Button"
 import { BlockLinkCard, ContentCard } from "./components/library/Card"
 import { SiVite, SiNextdotjs } from "react-icons/si"
+import { Input } from "./components/library/Input"
 
 export default function App() {
 	return (
 		<Layout>
+			{/* Buttons Container */}
 			<Container
 				title="Button"
 				description="A Button is a widget that enables users to trigger an action or event such as submitting a form, opening a dialog, cancelling an action, or performing delete operation"
@@ -232,6 +234,8 @@ export default function App() {
 					</Button>
 				</Section>
 			</Container>
+
+			{/* Cards Container */}
 			<Container
 				title="Card"
 				description="A card is a flexible and extensible content container"
@@ -285,6 +289,30 @@ export default function App() {
 					<BlockLinkCard url="https://nextjs.org/" text="NextJs">
 						<SiNextdotjs className="h-10 w-10" />
 					</BlockLinkCard>
+				</Section>
+			</Container>
+
+			{/* Input Containter */}
+			<Container
+				title="Inputs"
+				description="An input is a widget that allows users to provide data or specify options which can be submitted as part of a form or used to interact with and  manipulate content on a web page"
+			>
+				<Section title="Basic" description="Basic Input with a placeholder">
+					{/* Basic Input */}
+						<Input type="text" placeholder="Type things here!" />
+
+					{/* Disabled Input */}
+					<Input type="text" disabled placeholder="Disabled 😔" />
+				</Section>
+
+				<Section title="Label" description="Input with a label">
+					{/* Input with a label */}
+					<Input type="email" label="email" placeholder="you@site.com" />
+				</Section>
+
+				<Section title="Description" description="Input with a description">
+					{/* Input with a description */}
+					<Input type="password" label="password" description="We'll totally never share your password" placeholder="super-secret-password" />
 				</Section>
 			</Container>
 		</Layout>
