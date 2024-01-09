@@ -249,6 +249,29 @@ export default function App() {
 				</Section>
 
 				<Section
+					title="Simple card with a header and footer"
+					description="Add a optional header and/or footer within a card "
+				>
+					{/* Simple Card with header */}
+					<ContentCard
+						header="Featured"
+						title="Card Title"
+						subtitle="Card Subtitle"
+						plainText="Some quick example text to build on the card title and make up the bulk of the card's content"
+						link={{ url: "/", text: "Card link" }}
+					></ContentCard>
+
+					{/* Simple Card with footer */}
+					<ContentCard
+						footer="Last updated 5 mins ago"
+						title="Card Title"
+						subtitle="Card Subtitle"
+						plainText="Some quick example text to build on the card title and make up the bulk of the card's content"
+						link={{ url: "/", text: "Card link" }}
+					></ContentCard>
+				</Section>
+
+				<Section
 					title="Section Heading with Components"
 					description="Description using components"
 				>
