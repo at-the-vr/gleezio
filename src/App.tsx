@@ -83,6 +83,7 @@ export default function App() {
 							hoverBorder: "border-amber-500",
 							hoverBg: "hover:bg-amber-500",
 							focusRing: "focus:ring-amber-500",
+							darkHoverBorder: "dark:hover:border-amber-500",
 						}}
 					>
 						Amber
@@ -94,6 +95,7 @@ export default function App() {
 							hoverBorder: "border-rose-500",
 							hoverBg: "hover:bg-rose-500",
 							focusRing: "focus:ring-rose-500",
+							darkHoverBorder: "dark:hover:border-rose-500",
 						}}
 					>
 						Rose
@@ -105,6 +107,7 @@ export default function App() {
 							hoverBorder: "border-fuchsia-500",
 							hoverBg: "hover:bg-fuchsia-500",
 							focusRing: "focus:ring-fuchsia-500",
+							darkHoverBorder: "dark:hover:border-fuchsia-500",
 						}}
 					>
 						Fuchsia
@@ -116,6 +119,7 @@ export default function App() {
 							hoverBorder: "border-indigo-500",
 							hoverBg: "hover:bg-indigo-500",
 							focusRing: "focus:ring-indigo-500",
+							darkHoverBorder: "dark:hover:border-indigo-500",
 						}}
 					>
 						Indigo
@@ -127,6 +131,7 @@ export default function App() {
 							hoverBorder: "border-[#1da1f2]",
 							hoverBg: "hover:bg-[#1da1f2]",
 							focusRing: "focus:ring-[#1da1f2]",
+							darkHoverBorder: "dark:hover:border-[#1da1f2]",
 						}}
 					>
 						Twitter Blue
@@ -147,6 +152,7 @@ export default function App() {
 							text: "text-amber-500",
 							hoverText: "hover:text-amber-700",
 							focusRing: "focus:ring-amber-500",
+							darkHoverText: "dark:hover:text-amber-400",
 						}}
 					>
 						Amber
@@ -157,6 +163,7 @@ export default function App() {
 							text: "text-rose-500",
 							hoverText: "hover:text-rose-700",
 							focusRing: "focus:ring-rose-500",
+							darkHoverText: "dark:hover:text-rose-400",
 						}}
 					>
 						Rose
@@ -167,6 +174,7 @@ export default function App() {
 							text: "text-fuchsia-500",
 							hoverText: "hover:text-fuchsia-700",
 							focusRing: "focus:ring-fuchsia-500",
+							darkHoverText: "dark:hover:text-fuchsia-400",
 						}}
 					>
 						Fuchsia
@@ -177,6 +185,7 @@ export default function App() {
 							text: "text-indigo-500",
 							hoverText: "hover:text-indigo-700",
 							focusRing: "focus:ring-indigo-500",
+							darkHoverText: "dark:hover:text-indigo-400",
 						}}
 					>
 						Indigo
@@ -187,6 +196,7 @@ export default function App() {
 							text: "text-[#1da1f2]",
 							hoverText: "hover:[#1a8cd8]",
 							focusRing: "focus:ring-[#1da1f2]",
+							darkHoverText: "dark:hover:text-[#71c9f8]",
 						}}
 					>
 						Twitter Blue
@@ -216,6 +226,7 @@ export default function App() {
 							hoverBorder: "hover:border-red-500",
 							hoverBg: "hover:bg-red-500",
 							focusRing: "focus:ring-red-500",
+							darkHoverBorder: "dark:hover:border-red-500",
 						}}
 					>
 						Unsubscribe
@@ -228,6 +239,7 @@ export default function App() {
 							text: "text-gray-500",
 							hoverText: "hover:text-gray-700",
 							focusRing: "focus:ring-gray-500",
+							darkHoverText: "dark:hover:text-zinc-400",
 						}}
 					>
 						Cancel
@@ -299,7 +311,7 @@ export default function App() {
 			>
 				<Section title="Basic" description="Basic Input with a placeholder">
 					{/* Basic Input */}
-						<Input type="text" placeholder="Type things here!" />
+					<Input type="text" placeholder="Type things here!" />
 
 					{/* Disabled Input */}
 					<Input type="text" disabled placeholder="Disabled 😔" />
@@ -312,7 +324,12 @@ export default function App() {
 
 				<Section title="Description" description="Input with a description">
 					{/* Input with a description */}
-					<Input type="password" label="password" description="We'll totally never share your password" placeholder="super-secret-password" />
+					<Input
+						type="password"
+						label="password"
+						description="We'll totally never share your password"
+						placeholder="super-secret-password"
+					/>
 				</Section>
 			</Container>
 		</Layout>
